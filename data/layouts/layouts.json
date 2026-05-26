@@ -61,8 +61,8 @@
       "name": "LilycoveCity_Layout",
       "width": 80,
       "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "primary_tileset": "gTileset_Pory_General",
+      "secondary_tileset": "gTileset_Pallet",
       "border_filepath": "data/layouts/LilycoveCity/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity/map.bin",
       "layout_version": "emerald"
@@ -103,10 +103,10 @@
     {
       "id": "LAYOUT_LITTLEROOT_TOWN",
       "name": "LittlerootTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 72,
+      "height": 42,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/LittlerootTown/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown/map.bin",
       "layout_version": "emerald"

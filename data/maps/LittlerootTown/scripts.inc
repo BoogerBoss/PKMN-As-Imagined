@@ -109,8 +109,8 @@ LittlerootTown_OnFrame:
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
-	setvar VAR_0x8004, 44
-	setvar VAR_0x8005, 23
+	setvar VAR_0x8004, 46
+	setvar VAR_0x8005, 22
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
@@ -120,8 +120,8 @@ LittlerootTown_EventScript_StepOffTruckMale::
 
 LittlerootTown_EventScript_StepOffTruckFemale::
 	lockall
-	setvar VAR_0x8004, 44
-	setvar VAR_0x8005, 23
+	setvar VAR_0x8004, 46
+	setvar VAR_0x8005, 22
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F, 8, 8
@@ -130,6 +130,7 @@ LittlerootTown_EventScript_StepOffTruckFemale::
 	end
 
 LittlerootTown_EventScript_GoInsideWithMom::
+setobjectsubpriority LOCALID_PLAYER, MAP_LITTLEROOT_TOWN, 10
 	delay 15
 	playse SE_LEDGE
 	applymovement LOCALID_PLAYER, LittlerootTown_Movement_PlayerStepOffTruck
@@ -159,6 +160,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	hideplayer
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
+	resetobjectsubpriority LOCALID_PLAYER, MAP_LITTLEROOT_TOWN
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
@@ -196,9 +198,11 @@ LittlerootTown_Movement_PlayerEnterHouse:
 	step_end
 
 LittlerootTown_Movement_PlayerStepOffTruck:
-	jump_right
+	face_left
 	delay_16
+	face_right
 	delay_16
+	face_left
 	delay_16
 	step_end
 

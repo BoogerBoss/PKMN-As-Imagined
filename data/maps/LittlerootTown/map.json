@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE101",
-      "offset": 0,
+      "offset": 40,
       "direction": "up"
     }
   ],
@@ -76,7 +76,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 42,
+      "x": 43,
       "y": 24,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -89,7 +89,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 42,
+      "x": 43,
       "y": 24,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",

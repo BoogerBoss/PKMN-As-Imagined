@@ -1552,3 +1552,14 @@ const struct Tileset gTileset_New_General =
     .metatileAttributes = gMetatileAttributes_New_General,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Test =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Test,
+    .palettes = gTilesetPalettes_Test,
+    .metatiles = gMetatiles_Test,
+    .metatileAttributes = gMetatileAttributes_Test,
+    .callback = NULL,
+};
